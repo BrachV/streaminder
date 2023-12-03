@@ -1,9 +1,10 @@
 {
 	"manifest_version": 3,
-	"name": "Streaminder",
+	"name": "__MSG_namechrome__",
 	"version": "0.0.1",
-	"description": "Streaminder est l'extension Chrome ultime pour les passionnés de streaming qui veulent rester connectés avec leurs streamers préférés en un seul clic ! Ne perdez plus de temps à naviguer sur la page d'accueil de Twitch pour vérifier qui est en direct. Cette extension intuitive vous offre une solution simple et efficace pour savoir instantanément qui de vos streamers favoris est en live.",
+	"description": "__description__",
 	"author": "BrachV",
+    "default_locale": "fr",
 	
 	"permissions": [
 	  "storage",
@@ -16,6 +17,7 @@
 	],
 	
 	"action": {
+      "default_title": "__MSG_namechrome__",
 	  "default_popup": "./index.html"
 	},
 
