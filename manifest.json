@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "__MSG_namechrome__",
 	"version": "0.0.1",
-	"description": "__description__",
+	"description": "__MSG_description__",
 	"author": "BrachV",
     "default_locale": "fr",
 	
