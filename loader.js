@@ -7,14 +7,24 @@
  * @returns {void}
  */
 export default function CreateLoader(document, parent) {
-  // Create a new div element
-  let loaderDiv = document.createElement("div");
-  let loaderSpan = document.createElement("span");
+// Créer l'élément div
+var loaderCtn = document.createElement('div');
+loaderCtn.classList.add('loader-ctn');
 
-  // Add class to the div
-  loaderDiv.classList.add("loader");
-  loaderDiv.appendChild(loaderSpan);
+// Créer l'élément img
+var imgElement = document.createElement('img');
+imgElement.src = 'img/play-logo.svg';
 
-  // Append the loader div to the balise element
-  parent.appendChild(loaderDiv);
+// Créer l'élément span
+var spanElement = document.createElement('span');
+spanElement.classList.add('loader');
+
+// Ajouter l'élément img à loaderCtn
+loaderCtn.appendChild(imgElement);
+
+// Ajouter l'élément span à loaderCtn
+loaderCtn.appendChild(spanElement);
+
+// Ajouter loaderCtn au DOM (par exemple, à la fin du body)
+parent.appendChild(loaderCtn);
 }
