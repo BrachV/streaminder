@@ -1,37 +1,29 @@
 {
-	"manifest_version": 3,
-	"name": "__MSG_namechrome__",
-	"version": "0.0.1",
-	"description": "__MSG_description__",
-	"author": "BrachV",
-    "default_locale": "fr",
-	
-	"permissions": [
-	  "storage",
-	  "identity",
-	  "alarms"
-	],
+  "manifest_version": 3,
+  "name": "__MSG_namechrome__",
+  "version": "0.0.1",
+  "description": "__MSG_description__",
+  "author": "BrachV",
+  "default_locale": "fr",
 
-	"optional_permissions": [
-		"notifications"
-	],
-	
-	"action": {
-      "default_title": "__MSG_namechrome__",
-	  "default_popup": "./index.html"
-	},
+  "permissions": ["storage", "identity", "alarms"],
 
-	"background": {
-	  "service_worker": "background.js"
-	},
+  "optional_permissions": ["notifications"],
 
-	"options_page": "options.html",
-  
-	"content_scripts": [
-	  {
-		"js": ["class.js", "app.js", "./jsrsasign-all-min.js"],
-		"css": ["style.css"]
-	  }
-	]
-  }
-  
+  "action": {
+    "default_title": "__MSG_namechrome__",
+    "default_popup": "./index.html"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://localhost:28742/"],
+      "js": ["app.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

@@ -1,29 +1,29 @@
 {
-	"name": {
-		"message": "Streaminder"
-	},
-	"namechrome": {
-		"message": "Streaminder"
-	},
-	"description": {
-		"message": "Streaminder est l'extension ultime pour les passionnés de streaming qui veulent rester connectés avec leurs streamers préférés en un seul clic ! Ne perdez plus de temps à naviguer sur la page d'accueil de Twitch pour vérifier qui est en direct. Cette extension intuitive vous offre une solution simple et efficace pour savoir instantanément qui de vos streamers favoris est en live."
-	},
-	"tos": {
-		"message": "Conditions générales d'utilisation"
-	},
-	"login-name": {
-		"message": "Page de connexion"
-	},
-	"login-desc": {
-		"message": "Vos streamers favoris, en un clin d'œil !"
-	},
-	"login-button": {
-		"message": "Poursuivre avec Twitch"
-	},
-	"login-warning": {
-		"message": "En poursuivant avec Twitch, vous acceptez automatiquement les conditions générales d'utilisation."
-	},
-	"login-error": {
-		"message": "Une erreur est survenue lors de la connexion avec Twitch."
-	}
+  "name": {
+    "message": "Streaminder"
+  },
+  "namechrome": {
+    "message": "Streaminder"
+  },
+  "description": {
+    "message": "Streaminder est l'extension ultime pour les passionnés de streaming qui veulent rester connectés avec leurs streamers préférés en un seul clic ! Ne perdez plus de temps à naviguer sur la page d'accueil de Twitch pour vérifier qui est en direct. Cette extension intuitive vous offre une solution simple et efficace pour savoir instantanément qui de vos streamers favoris est en live."
+  },
+  "tos": {
+    "message": "Conditions générales d'utilisation"
+  },
+  "login_name": {
+    "message": "Page de connexion"
+  },
+  "login_desc": {
+    "message": "Vos streamers favoris, en un clin d'œil !"
+  },
+  "login_button": {
+    "message": "Poursuivre avec Twitch"
+  },
+  "login_warning": {
+    "message": "En poursuivant avec Twitch, vous acceptez automatiquement les conditions générales d'utilisation."
+  },
+  "login_error": {
+    "message": "Une erreur est survenue lors de la connexion avec Twitch."
+  }
 }
