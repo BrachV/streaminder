@@ -22,7 +22,7 @@
   "content_scripts": [
     {
       "matches": ["http://localhost:28742/"],
-      "js": ["app.js"],
+      "js": ["locale.js", "app.js"],
       "css": ["style.css"]
     }
   ]
