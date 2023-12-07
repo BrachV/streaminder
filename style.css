@@ -1,6 +1,7 @@
 /* #region VARIABLES */
 :root {
   --PRIMARY-COLOR: #c971ff;
+  --PRIMARY-HOVER-COLOR: #a44dff;
   --SECONDARY-COLOR: #c4c4c4;
   --TEXT-COLOR: #ffffff;
   --PARAGRAPH-COLOR: #dedee3;
@@ -12,11 +13,90 @@
 
 /* #endregion */
 
+/* #region MAIN */
 body {
   background-color: var(--BACKGROUND-COLOR);
   width: 250px;
   height: 350px;
 }
+
+/* #region LOGIN PAGE */
+.login-ctn {
+  display: grid;
+  grid-template-rows: 50% 50%; /* Deux lignes de hauteur automatique */
+  grid-gap: 10px; /* Espace entre les éléments de la grille (facultatif) */
+  height: 100%;
+}
+.login-ctn section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* HEADER SECTION */
+.login-ctn .select-locale {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+.login-ctn .select-locale select {
+  padding: 3px 6px;
+  margin-bottom: 10px;
+}
+.login-ctn .streaminder-logo {
+  width: 220px;
+  height: auto;
+}
+.login-ctn .subtitle {
+  color: var(--TEXT-COLOR);
+  font-weight: 200;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+}
+/* LOGIN SECTION */
+.login-ctn .login-btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--PRIMARY-COLOR);
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 230px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.login-ctn .login-btn:hover {
+  background-color: var(--PRIMARY-HOVER-COLOR);
+  transform: translate(0, -2px);
+}
+.login-ctn .login-btn .twitch-logo {
+  width: 30px;
+  object-fit: cover;
+  height: auto;
+}
+.login-ctn .login-btn span {
+  margin-left: 5px;
+  color: var(--TEXT-COLOR);
+  font-weight: 700;
+  font-size: 16px;
+}
+.login-ctn .warning {
+  color: var(--SECONDARY-COLOR);
+  font-weight: 100;
+  font-size: 10px;
+  text-align: center;
+}
+.login-ctn .tos {
+  color: var(--TEXT-COLOR);
+  font-weight: 200;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+/* #endregion */
 
 /* #region COMPONENTS */
 

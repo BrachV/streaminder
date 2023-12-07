@@ -6,11 +6,35 @@
     <title>Streaminder</title>
   </head>
   <body>
-    <div class="container" id="container"></div>
-    <div class="loader-ctn">
-      <img src="img/play-logo.svg" />
-      <span class="loader"></span>
+    <div class="login-ctn" id="container">
+      <section>
+        <div class="select-locale">
+          <select name="locale" id="locale">
+            <option value="fr" selected>Français</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <img
+          class="streaminder-logo"
+          src="img/white-logo.svg"
+          alt="Streaminder Logo"
+        />
+        <p class="subtitle" data-locale="login_desc"></p>
+      </section>
+      <section>
+        <button type="button" class="login-btn">
+          <img
+            class="twitch-logo"
+            src="/img/twitch-logo.svg"
+            alt="Twitch Logo"
+          />
+          <span data-locale="login_button"></span>
+        </button>
+        <p class="warning" data-locale="login_warning"></p>
+        <a href="#" data-locale="tos" class="tos"></a>
+      </section>
     </div>
     <script src="app.js"></script>
+    <script src="locale.js"></script>
   </body>
 </html>
