@@ -6,32 +6,188 @@
     <title>Streaminder</title>
   </head>
   <body>
-    <div class="login-ctn" id="container">
-      <section>
-        <div class="select-locale">
-          <select name="locale" id="locale">
-            <option value="fr" selected>Français</option>
-            <option value="en">English</option>
-          </select>
-        </div>
+    <div class="home-ctn" id="container">
+      <header class="home-header">
         <img
           class="streaminder-logo"
           src="img/white-logo.svg"
           alt="Streaminder Logo"
         />
-        <p class="subtitle" data-locale="login_desc"></p>
-      </section>
-      <section>
-        <button type="button" class="login-btn">
+        <button id="settings-btn">
           <img
-            class="twitch-logo"
-            src="/img/twitch-logo.svg"
-            alt="Twitch Logo"
+            class="settings-icon"
+            src="img/settings.svg"
+            alt="Settings icon"
           />
-          <span data-locale="login_button"></span>
         </button>
-        <p class="warning" data-locale="login_warning"></p>
-        <a href="#" data-locale="tos" class="tos"></a>
+      </header>
+      <section>
+        <div class="filter-ctn">
+          <div class="search-bar-ctn">
+            <input
+              id="search-bar"
+              class="search-bar"
+              data-locale-placeholder="filter_name"
+            />
+            <div class="search-icon-ctn">
+              <img
+                class="search-icon-img"
+                src="img/search.svg"
+                alt="Search icon"
+              />
+            </div>
+          </div>
+          <button class="filter-btn" id="filter">
+            <img class="filter-icon" src="img/filter.svg" alt="Filter icon" />
+          </button>
+        </div>
+
+        <div class="streamer-ctn">
+          <div class="streamer-row-ctn" id="streamer1">
+            <div class="streamer-row-part-ctn">
+              <img
+                class="streamer-row-avatar"
+                src="/img/temp-icon.png"
+                alt="X"
+              />
+              <div class="streamer-row-info-ctn">
+                <h2 class="no-margin">Streamer1</h2>
+                <p class="no-margin">Jeux</p>
+              </div>
+            </div>
+            <div class="streamer-row-part-ctn">
+              <div class="streamer-row-stats-ctn">
+                <span class="streamer-row-stats-dot"></span>
+                <p>20</p>
+              </div>
+              <button class="streamer-row-params-ctn">
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+              </button>
+            </div>
+          </div>
+          <div class="streamer-row-ctn" id="streamer2">
+            <div class="streamer-row-part-ctn">
+              <img
+                class="streamer-row-avatar"
+                src="/img/temp-icon.png"
+                alt="X"
+              />
+              <div class="streamer-row-info-ctn">
+                <h2 class="no-margin">Streamer2</h2>
+                <p class="no-margin">Jeux</p>
+              </div>
+            </div>
+            <div class="streamer-row-part-ctn">
+              <div class="streamer-row-stats-ctn">
+                <span class="streamer-row-stats-dot"></span>
+                <p>20</p>
+              </div>
+              <button class="streamer-row-params-ctn">
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+              </button>
+            </div>
+          </div>
+          <div class="streamer-row-ctn" id="streamer3">
+            <div class="streamer-row-part-ctn">
+              <img
+                class="streamer-row-avatar"
+                src="/img/temp-icon.png"
+                alt="X"
+              />
+              <div class="streamer-row-info-ctn">
+                <h2 class="no-margin">Streamer3</h2>
+                <p class="no-margin">Jeux</p>
+              </div>
+            </div>
+            <div class="streamer-row-part-ctn">
+              <div class="streamer-row-stats-ctn">
+                <span class="streamer-row-stats-dot"></span>
+                <p>20</p>
+              </div>
+              <button class="streamer-row-params-ctn">
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+              </button>
+            </div>
+          </div>
+          <div class="streamer-row-ctn" id="streamer4">
+            <div class="streamer-row-part-ctn">
+              <img
+                class="streamer-row-avatar"
+                src="/img/temp-icon.png"
+                alt="X"
+              />
+              <div class="streamer-row-info-ctn">
+                <h2 class="no-margin">Streamer4</h2>
+                <p class="no-margin">Jeux</p>
+              </div>
+            </div>
+            <div class="streamer-row-part-ctn">
+              <div class="streamer-row-stats-ctn">
+                <span class="streamer-row-stats-dot"></span>
+                <p>20</p>
+              </div>
+              <button class="streamer-row-params-ctn">
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+              </button>
+            </div>
+          </div>
+          <div class="streamer-row-ctn" id="streamer5">
+            <div class="streamer-row-part-ctn">
+              <img
+                class="streamer-row-avatar"
+                src="/img/temp-icon.png"
+                alt="X"
+              />
+              <div class="streamer-row-info-ctn">
+                <h2 class="no-margin">Streamer5</h2>
+                <p class="no-margin">Jeux</p>
+              </div>
+            </div>
+            <div class="streamer-row-part-ctn">
+              <div class="streamer-row-stats-ctn">
+                <span class="streamer-row-stats-dot"></span>
+                <p>20</p>
+              </div>
+              <button class="streamer-row-params-ctn">
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+              </button>
+            </div>
+          </div>
+          <div class="streamer-row-ctn" id="streamer6">
+            <div class="streamer-row-part-ctn">
+              <img
+                class="streamer-row-avatar"
+                src="/img/temp-icon.png"
+                alt="X"
+              />
+              <div class="streamer-row-info-ctn">
+                <h2 class="no-margin">Streamer6</h2>
+                <p class="no-margin">Jeux</p>
+              </div>
+            </div>
+            <div class="streamer-row-part-ctn">
+              <div class="streamer-row-stats-ctn">
+                <span class="streamer-row-stats-dot"></span>
+                <p>20</p>
+              </div>
+              <button class="streamer-row-params-ctn">
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+                <span class="streamer-row-params-dot"></span>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <script src="app.js"></script>
